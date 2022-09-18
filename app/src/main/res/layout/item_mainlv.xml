@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <cn.jzvd.JzvdStd
+        android:id="@+id/item_main_jzvd"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+    </cn.jzvd.JzvdStd>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/item_main_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/item_main_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/item_main_iv"
+            android:text="DZH"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_main_tv_heart"
+            android:layout_width="60dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:drawableLeft="@mipmap/icon_heart"
+            android:drawablePadding="5dp"
+            android:text="1234"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/item_main_tv_reply"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/item_main_tv_heart"
+            android:drawableLeft="@mipmap/icon_comment"
+            android:drawablePadding="5dp"
+            android:text="1234"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/item_main_tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_main_tv_name"
+            android:layout_alignLeft="@+id/item_main_tv_name"
+            android:layout_toLeftOf="@+id/item_main_tv_reply"
+            android:text="CSDNCSDNCSDN"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</LinearLayout>
